@@ -1,0 +1,93 @@
+[
+    {
+      "model": "spots.spot",
+      "pk": "11111111-1111-1111-1111-111111111111",
+      "fields": {
+        "name": "Biblioteca Civica Centrale",
+        "address": "Via della Cittadella 5",
+        "city": "Torino",
+        "lat": 45.070500,
+        "lng": 7.686900,
+        "wifi": true,
+        "outlets": true,
+        "quiet_level": 5,
+        "opening_hours": {"mon-fri":"09:00-19:00","sat":"09:00-13:00"}
+      }
+    },
+    {
+      "model": "spots.spot",
+      "pk": "22222222-2222-2222-2222-222222222222",
+      "fields": {
+        "name": "Biblioteca Luigi Einaudi (BLE)",
+        "address": "Lungo Dora Siena 100/A",
+        "city": "Torino",
+        "lat": 45.081300,
+        "lng": 7.692900,
+        "wifi": true,
+        "outlets": true,
+        "quiet_level": 4,
+        "opening_hours": {"mon-fri":"08:30-19:00","sat":"09:00-13:00"}
+      }
+    },
+    {
+      "model": "spots.spot",
+      "pk": "33333333-3333-3333-3333-333333333333",
+      "fields": {
+        "name": "Biblioteca Politecnico di Torino",
+        "address": "Corso Duca degli Abruzzi 24",
+        "city": "Torino",
+        "lat": 45.062500,
+        "lng": 7.662900,
+        "wifi": true,
+        "outlets": true,
+        "quiet_level": 4,
+        "opening_hours": {"mon-fri":"08:30-19:00"}
+      }
+    },
+    {
+      "model": "spots.spot",
+      "pk": "44444444-4444-4444-4444-444444444444",
+      "fields": {
+        "name": "M**Bun (quiet mornings)",
+        "address": "Corso Siccardi 8/A",
+        "city": "Torino",
+        "lat": 45.073600,
+        "lng": 7.675300,
+        "wifi": true,
+        "outlets": false,
+        "quiet_level": 3,
+        "opening_hours": {"daily":"12:00-22:30"}
+      }
+    },
+    {
+      "model": "spots.spot",
+      "pk": "55555555-5555-5555-5555-555555555555",
+      "fields": {
+        "name": "Circolo dei Lettori (reading rooms)",
+        "address": "Via Bogino 9",
+        "city": "Torino",
+        "lat": 45.066800,
+        "lng": 7.685600,
+        "wifi": true,
+        "outlets": false,
+        "quiet_level": 4,
+        "opening_hours": {"mon-sat":"09:30-19:30"}
+      }
+    },
+    {
+      "model": "spots.spot",
+      "pk": "66666666-6666-6666-6666-666666666666",
+      "fields": {
+        "name": "Fondazione Sandretto Re Rebaudengo (café)",
+        "address": "Via Modane 16",
+        "city": "Torino",
+        "lat": 45.063400,
+        "lng": 7.651800,
+        "wifi": true,
+        "outlets": true,
+        "quiet_level": 3,
+        "opening_hours": {"wed-sun":"12:00-19:00"}
+      }
+    }
+  ]
+  
