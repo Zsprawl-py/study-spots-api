@@ -2,12 +2,14 @@ from django.db import models
 import uuid
 from django.conf import settings
 from django.utils import timezone
+from django.utils.text import slugify
 
 
 
 class Spot(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=255, unique=True)
+    slug = models.SlugField(max_length=160, unique=True, blank=False, null=False)
     address = models.CharField(max_length=255)
     city = models.CharField(max_length=100, default='Torino')
     lat = models.DecimalField(max_digits=9, decimal_places=6)

@@ -5,9 +5,11 @@ from .models import Spot, Review
 @admin.register(Spot)
 class SpotAdmin(admin.ModelAdmin):
     list_display = ('name', 'city', 'wifi', 'outlets', 'quiet_level')
+    list_display_links = ("name",)
     search_fields = ('name', 'address', 'city')
     list_filter = ('city', 'wifi', 'outlets', 'quiet_level')
     readonly_fields = ('created_at', 'updated_at')
+    # prepopulated_fields = {"slug": ("name",)}
 
 
 @admin.register(Review)
