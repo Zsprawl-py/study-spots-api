@@ -26,7 +26,7 @@ def test_create_review_requires_auth(client):
 def test_create_and_update_review_with_jwt(django_user_model):
     # create user & get token
     password = "pass12345"
-    user = django_user_model.objects.create_user(username="alice", password=password)
+    django_user_model.objects.create_user(username="alice", password=password)
     api = APIClient()
     token_res = api.post(
         "/api/v1/auth/token/", {"username": "alice", "password": password}, format="json"
@@ -53,7 +53,7 @@ def test_create_and_update_review_with_jwt(django_user_model):
 @pytest.mark.django_db
 def test_owner_only_delete_review(django_user_model):
     owner = django_user_model.objects.create_user(username="bob", password="x")
-    other = django_user_model.objects.create_user(username="eve", password="x")
+    _other = django_user_model.objects.create_user(username="eve", password="x")
     spot = baker.make(Spot, lat=45.0, lng=7.0)
     rev = Review.objects.create(spot=spot, user=owner, rating=5)
 
