@@ -7,13 +7,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('spots', '0002_rename_quietness_spot_quiet_level'),
+        ("spots", "0002_rename_quietness_spot_quiet_level"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='spot',
-            name='created_at',
+            model_name="spot",
+            name="created_at",
             field=models.DateTimeField(default=django.utils.timezone.now, editable=False),
         ),
     ]
