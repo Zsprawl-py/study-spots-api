@@ -77,7 +77,9 @@ REST_FRAMEWORK = {
         "user": "120/min",
         "review-create": "10/min",
     },
+    "EXCEPTION_HANDLER": "core.exceptions.custom_exception_handler",
 }
+
 REST_FRAMEWORK["DEFAULT_RENDERER_CLASSES"] = ["rest_framework.renderers.JSONRenderer"] + (
     ["rest_framework.renderers.BrowsableAPIRenderer"] if DEBUG else []
 )

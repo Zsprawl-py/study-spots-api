@@ -1,20 +1,46 @@
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-*.sqlite3
-db.sqlite3
+*.pyc
+*.py.class
 
 # Virtual environment
 .venv/
 env/
 venv/
+ENV/
 
 # Django stuff
+*.sqlite3
 *.log
 media/
 staticfiles/
+db.sqlite3
 
-# VS Code
+# Environment / secrets
+.env
+*.env
+
+# IDE / editor
 .vscode/
+.idea/
+*.swp
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Migrations (optional — you can keep them if project is ready)
+# ** If you are still changing models a lot, keep them tracked **
+# ** Otherwise, comment these out later **
+# */migrations/
+
+# Docker
+docker/__pycache__/
+.dockerignore
+
+# Bytecode cache from Ruff / Black
+.cache/

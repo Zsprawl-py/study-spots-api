@@ -31,3 +31,12 @@ python manage.py runserver
   - POST /api/v1/spots/{id}/reviews/ (auth, upsert)
   - GET/PATCH/DELETE /api/v1/reviews/{id}/ (owner or admin)
 - Throttling: review-create = 10/min; anon=60/min; user=120/min
+
+
+## Day 4
+-  Tests with pytest + model-bakery (spots & reviews)
+-  Lint/format (ruff, black)
+-  Swagger docs improved with parameters & descriptions
+-  CORS enabled for local dev
+-  GitHub Actions CI (lint + tests)
+-  Docker dev setup (SQLite)
