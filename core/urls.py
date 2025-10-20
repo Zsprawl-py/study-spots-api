@@ -21,7 +21,9 @@ from django.urls import include, path
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
 
 
-def health(_): return JsonResponse({"ok": True})
+def health(_):
+    return JsonResponse({"ok": True})
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
