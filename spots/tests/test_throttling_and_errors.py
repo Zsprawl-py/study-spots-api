@@ -1,12 +1,15 @@
 import pytest
-from rest_framework.test import APIClient
-from model_bakery import baker
-from spots.models import Spot
 from django.contrib.auth import get_user_model
+from model_bakery import baker
+from rest_framework.test import APIClient
+
+from spots.models import Spot
+
 
 @pytest.mark.django_db
 def test_review_post_throttle():
-    user = get_user_model().objects.create_user(username="peter", password="x")
+    # Create a user and authenticate
+    get_user_model().objects.create_user(username="peter", password="x")
     api = APIClient()
     token = api.post("/api/v1/auth/token/", {"username": "peter", "password": "x"}, format="json").json()["access"]
     api.credentials(HTTP_AUTHORIZATION=f"Bearer {token}")

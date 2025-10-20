@@ -7,6 +7,6 @@ services:
       - "8000:8000"
     environment:
       SECRET_KEY: dev-secret
-      DJANGO_SETTINGS_MODULE: core.settings
+      DJANGO_SETTINGS_MODULE: core.settings_dev
     volumes:
       - .:/app

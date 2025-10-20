@@ -1,4 +1,5 @@
 from .settings_dev import *  # noqa
+from .settings_dev import BASE_DIR
 import os
 
 DEBUG = False
