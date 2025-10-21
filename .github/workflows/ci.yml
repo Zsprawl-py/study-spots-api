@@ -23,6 +23,6 @@ jobs:
           black --check .
       - name: Tests
         env:
-          DJANGO_SETTINGS_MODULE: core.settings
+          DJANGO_SETTINGS_MODULE: core.settings_dev
         run: |
           pytest
